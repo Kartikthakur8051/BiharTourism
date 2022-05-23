@@ -1,0 +1,97 @@
+* {
+    margin: 0% auto;
+    padding: 0% 0%;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1366px;
+    background: linear-gradient(to left, rgb(0, 119, 255), rgb(0, 13, 36));
+}
+
+.unipadding {
+    padding: 0px 15%;
+}
+
+.ids {
+    background: linear-gradient(to left, red, black);
+    padding: 0.5rem;
+    /* text-align: center; */
+}
+
+.ids a,
+.ids p {
+    display: inline-block;
+    margin: 0rem 1rem;
+    color: aliceblue;
+
+}
+
+.ids a,
+.p {
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ids .top-login {
+    float: right;
+
+}
+
+.container {
+    width: 100%;
+    background-size: 100%;
+    background-image: url(../images/main.jpg);
+}
+
+/* navbar */
+.navbar {
+    background: linear-gradient(45deg, #031c2f, #e4e2eddb);
+    padding: 2rem 14.5rem;
+}
+
+.navbar h2 {
+    display: inline-block;
+    color: aliceblue;
+    font-size: 1.8em;
+}
+
+.navbar a {
+    float: right;
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1.3em;
+    color: #1f058e;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 0px 0.5rem;
+}
+
+
+
+/* Footer */
+.upper-footer{
+    display: flex;
+    background: linear-gradient(to right , black,rgba(255, 255, 255, 0.322));
+    margin: 3rem 0em;
+    padding: 2%;
+    justify-content: space-around;
+}
+.upper-footer .quicklink, .upper-footer .contact{
+    width: 25%;
+    text-align: center;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.lower-footer{
+    text-align: center;
+    font-size: 1.5rem;
+}
+li , .lower-footer h3{
+    list-style: none;
+    font-size: 1.2rem;
+}
