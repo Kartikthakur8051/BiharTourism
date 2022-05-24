@@ -1,19 +1,24 @@
 * {
-    margin: 0% auto;
+    margin: 0% 0%;
     padding: 0% 0%;
     box-sizing: border-box;
 }
+.flex{
+    display: flex;
+}
 
 body {
+    margin: auto;
     max-width: 1366px;
     background: linear-gradient(to left, rgb(0, 119, 255), rgb(0, 13, 36));
 }
 
 .unipadding {
-    padding: 0px 15%;
+    padding: 0px 8%;
 }
 
 .ids {
+    justify-content: flex-end;
     background: linear-gradient(to left, red, black);
     padding: 0.5rem;
     /* text-align: center; */
@@ -40,17 +45,24 @@ body {
 }
 
 .container {
-    width: 100%;
+    flex-direction: column;
+    /* width: 100%; */
+    /* height: 100%; */
     background-size: 100%;
     background-image: url(../images/main.jpg);
+    background-repeat: no-repeat;
 }
 
 /* navbar */
-.navbar {
-    background: linear-gradient(45deg, #031c2f, #e4e2eddb);
-    padding: 2rem 14.5rem;
+.navbtn{
+    justify-content: flex-end;
 }
-
+.navbar {
+    justify-content: space-between;
+    background: linear-gradient(45deg, #031c2f, #e4e2eddb);
+    padding: 2rem 7.5rem;
+}
+ 
 .navbar h2 {
     display: inline-block;
     color: aliceblue;
@@ -61,15 +73,64 @@ body {
     float: right;
     text-decoration: none;
     padding: 0rem 1rem;
-    font-size: 1.3em;
+    /* font-size: 1.3rem; */
     color: #1f058e;
     background-color: aliceblue;
-    border-radius: 5px;
-    margin: 0px 0.5rem;
+    border-radius: 12px;
+    margin: 0.5rem 0.5rem;
 }
 
 
+/* MAin Container */
+.main-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: self-end;
+    margin: 6rem;
+    /* padding: 199px; */
+    height: 30rem;
+}
+.main-container h1 {
+    font-size: 5rem;
+    padding: 1rem;
+    width: 23rem;
+    border-bottom: 3px solid rgb(70, 69, 69);
+}
+.main-container h1 span{
+    color: #0a083f;
+}
 
+
+.main-container button {
+    margin: 0rem 10rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    border-bottom: 2px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #19ad5b91;
+}
+
+.main-container  button:hover{
+    background-color:#0784b194;
+}
+
+@media only screen and (max-width:1000px) {
+    .main-container{
+        margin: 2rem;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 20rem;
+    }
+    .main-container h1{
+        font-size: 4rem;
+        margin: 2rem;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    
+}
 /* Footer */
 .upper-footer{
     display: flex;
@@ -82,11 +143,7 @@ body {
     width: 25%;
     text-align: center;
 }
-footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
+
 .lower-footer{
     text-align: center;
     font-size: 1.5rem;
